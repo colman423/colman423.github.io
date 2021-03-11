@@ -244,12 +244,11 @@ var pxt;
     }
     function isIFrame() {
         return false;
-        try {
-            return window && window.self !== window.top;
-        }
-        catch (e) {
-            return false;
-        }
+        // try {
+        //     return window && window.self !== window.top;
+        // } catch (e) {
+        //     return false;
+        // }
     }
     function isNotHosted() {
         // If local serve, config will not exist. If served statically, we check the flag in the config

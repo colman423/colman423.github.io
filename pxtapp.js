@@ -3318,12 +3318,11 @@ var pxt;
     (function (BrowserUtils) {
         function isIFrame() {
             return false;
-            try {
-                return window && window.self !== window.top;
-            }
-            catch (e) {
-                return true;
-            }
+            // try {
+            //     return window && window.self !== window.top;
+            // } catch (e) {
+            //     return true;
+            // }
         }
         BrowserUtils.isIFrame = isIFrame;
         function hasNavigator() {
